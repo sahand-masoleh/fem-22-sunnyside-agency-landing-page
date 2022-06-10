@@ -42,15 +42,15 @@ var points = [
 function PointContainer() {
 	return (
 		<>
-			<div className="point^container point^container--right">
+			<div className="point-container point-container--right">
 				<Point point={points[0][0]} />
 				<Point point={points[0][1]} />
 			</div>
-			<div className="point^container point^container--left">
+			<div className="point-container point-container--left">
 				<Point point={points[1][0]} />
 				<Point point={points[1][1]} />
 			</div>
-			<div className="point^container point^container--left">
+			<div className="point-container point-container--left">
 				<Point point={points[2][0]} />
 				<Point point={points[2][1]} />
 			</div>

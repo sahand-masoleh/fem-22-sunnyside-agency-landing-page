@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Barlow", sans-serif;
 }
 
 :root {
@@ -18,4 +21,20 @@
 	--dark-grayish-blue: hsl(232, 10%, 55%);
 	--grayish-blue: hsl(210, 4%, 67%);
 	--white: hsl(0, 0%, 100%);
+
+	--gap-1: 1.5rem;
+	--gap-2: 2rem;
+	--gap-3: 4.5rem;
+}
+
+body {
+	background-color: var(--dark-moderate--cyan-footer);
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.font-secondary {
+	font-family: "Fraunces", serif;
 }
