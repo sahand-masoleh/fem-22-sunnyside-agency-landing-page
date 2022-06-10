@@ -5,7 +5,11 @@ function ResponsiveImage({ className, fileName, alt }) {
 				srcSet={`./images/desktop/image-${fileName}.jpg`}
 				media={`(min-width: ${process.env.REACT_APP_BREAKPOINT})`}
 			/>
-			<img src={`./images/mobile/image-${fileName}.jpg`} alt={alt} />
+			<img
+				src={`./images/mobile/image-${fileName}.jpg`}
+				alt={alt}
+				className="image"
+			/>
 		</picture>
 	);
 }

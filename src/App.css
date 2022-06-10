@@ -38,3 +38,7 @@ body {
 .font-secondary {
 	font-family: "Fraunces", serif;
 }
+
+.image {
+	max-width: 100%;
+}
