@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 
 import ResponsiveImage from "./components/ResponsiveImage";
+import PointContainer from "./components/Point";
 
 function App() {
 	return (
@@ -17,7 +18,7 @@ function App() {
 						alt={"an orange"}
 					/>
 				</header>
-				<div className="point-container"></div>
+				<PointContainer />
 				<div className="testimonial-container"></div>
 			</main>
 			<footer className="footer"></footer>
