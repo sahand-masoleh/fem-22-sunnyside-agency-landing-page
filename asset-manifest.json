@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/fem-22-sunnyside-agency-landing-page/static/css/main.8d1fe9cc.css",
-    "main.js": "/fem-22-sunnyside-agency-landing-page/static/js/main.57e44497.js",
+    "main.css": "/fem-22-sunnyside-agency-landing-page/static/css/main.7e75b119.css",
+    "main.js": "/fem-22-sunnyside-agency-landing-page/static/js/main.2d2fe7bf.js",
     "static/media/logo.svg": "/fem-22-sunnyside-agency-landing-page/static/media/logo.4271b8992622e4dd1cc7.svg",
     "static/media/icon-instagram.svg": "/fem-22-sunnyside-agency-landing-page/static/media/icon-instagram.7d97118aca6da4dd308f.svg",
     "index.html": "/fem-22-sunnyside-agency-landing-page/index.html",
     "static/media/icon-pinterest.svg": "/fem-22-sunnyside-agency-landing-page/static/media/icon-pinterest.fd8b84da3f15023f2ae8.svg",
     "static/media/icon-twitter.svg": "/fem-22-sunnyside-agency-landing-page/static/media/icon-twitter.23df5d421d6e70c35715.svg",
     "static/media/icon-facebook.svg": "/fem-22-sunnyside-agency-landing-page/static/media/icon-facebook.101bd07e99eaeae8b0f5.svg",
-    "main.8d1fe9cc.css.map": "/fem-22-sunnyside-agency-landing-page/static/css/main.8d1fe9cc.css.map",
-    "main.57e44497.js.map": "/fem-22-sunnyside-agency-landing-page/static/js/main.57e44497.js.map"
+    "main.7e75b119.css.map": "/fem-22-sunnyside-agency-landing-page/static/css/main.7e75b119.css.map",
+    "main.2d2fe7bf.js.map": "/fem-22-sunnyside-agency-landing-page/static/js/main.2d2fe7bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d1fe9cc.css",
-    "static/js/main.57e44497.js"
+    "static/css/main.7e75b119.css",
+    "static/js/main.2d2fe7bf.js"
   ]
 }
