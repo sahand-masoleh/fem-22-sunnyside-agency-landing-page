@@ -66,19 +66,27 @@ function Point({ point }) {
 	const { image, alt, accent, title, text, link } = point;
 	const modifier =
 		image && !title
-			? "point__overlay--image-only"
+			? "image-only"
 			: !image && text
-			? "point__overlay--text-only"
-			: "point__overlay--text-n-image";
+			? "text-only"
+			: "text-n-image";
 	return (
 		<section className="point">
 			{image && (
 				<ResponsiveImage className="point__image" fileName={image} alt={alt} />
 			)}
 			{text && (
-				<div className={`point__overlay ${modifier}`}>
-					{title && <h2 className="point__title font-900">{title}</h2>}
-					{text && <p className="point__text">{text}</p>}
+				<div className={`point__overlay point__overlay--${modifier}`}>
+					{title && (
+						<h2 className={`point__title point__title--${modifier} font-900`}>
+							{title}
+						</h2>
+					)}
+					{text && (
+						<p className="point__text" data-type={image}>
+							{text}
+						</p>
+					)}
 					{link && (
 						// eslint-disable-next-line jsx-a11y/anchor-is-valid
 						<a
