@@ -36,6 +36,7 @@
 @media screen and (min-width: 640px) {
 	.testimonial-container {
 		padding: var(--gap-4) var(--gap-4);
+		gap: var(--gap-2);
 	}
 
 	.testimonial-container__header {
