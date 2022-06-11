@@ -12,7 +12,11 @@
 	background-color: var(--white);
 	position: relative;
 	display: grid;
-	place-items: center;
+	align-items: center;
+}
+
+.point__image {
+	height: 100%;
 }
 
 .point__overlay {
@@ -21,6 +25,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-1);
+	width: 100%;
 }
 
 .point__overlay--text-only {
@@ -41,14 +46,11 @@
 .point__text {
 	color: inherit;
 	line-height: 1.5rem;
-	margin: 0 auto;
 }
 
 .point__link {
 	text-decoration: none;
 	position: relative;
-	width: fit-content;
-	margin: 0 auto;
 }
 
 .point__link::after {
@@ -66,6 +68,6 @@
 
 @media screen and (min-width: 640px) {
 	.point {
-		max-width: 50%;
+		flex-basis: 50%;
 	}
 }
