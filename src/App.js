@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 
 import Hero from "./components/Hero";
 import PointContainer from "./components/Point";
+import TestimonialContainer from "./components/Testimonial";
 
 function App() {
 	return (
@@ -12,7 +13,7 @@ function App() {
 			<main className="main">
 				<Hero />
 				<PointContainer />
-				<div className="testimonial-container"></div>
+				<TestimonialContainer />
 			</main>
 			<footer className="footer"></footer>
 		</>

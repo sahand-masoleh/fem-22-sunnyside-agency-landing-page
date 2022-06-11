@@ -25,7 +25,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--gap-1);
-	width: 100%;
+	width: 100%; /* for the text to cover the width */
 }
 
 .point__overlay--text-only {
