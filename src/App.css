@@ -60,3 +60,12 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
+
+.attribution {
+	font-size: 0.5rem;
+	color: var(--dark-moderate--cyan-footer);
+}
+
+.attribution a {
+	color: var(--dark-grayish-blue);
+}

@@ -66,6 +66,10 @@
 	border-radius: 1rem;
 	outline: 0.25rem solid var(--accent);
 	mix-blend-mode: multiply;
+	opacity: 0.25;
+}
+.point__link:hover::after {
+	opacity: 1;
 }
 
 @media screen and (min-width: 640px) {
