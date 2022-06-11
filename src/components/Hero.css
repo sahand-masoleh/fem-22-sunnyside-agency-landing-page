@@ -1,5 +1,6 @@
 .hero {
 	position: relative;
+	display: grid; /* this is needed to eliminate the weird 3px gap after */
 }
 
 .hero__overlay {
@@ -19,4 +20,8 @@
 	font-size: 2.5rem;
 	text-align: center;
 	letter-spacing: 0.25ch;
+}
+
+.hero__image {
+	height: 100%;
 }

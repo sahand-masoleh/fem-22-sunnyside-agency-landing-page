@@ -9,6 +9,7 @@
 .testimonial-container__header {
 	letter-spacing: 0.25rem;
 	color: var(--grayish-blue);
+	text-align: center;
 }
 
 .testimonial {
