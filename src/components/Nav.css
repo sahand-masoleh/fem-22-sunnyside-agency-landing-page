@@ -54,3 +54,38 @@
 	border-radius: 2rem;
 	font-weight: 900;
 }
+
+@media screen and (min-width: 640px) {
+	.nav-container {
+		align-items: center;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.logo {
+		width: 12rem;
+		height: fit-content;
+	}
+
+	.nav {
+		display: flex;
+		position: static;
+		flex-direction: row;
+		background-color: transparent;
+		margin: 0;
+		padding: 0;
+		margin-top: 0;
+		gap: var(--gap-2);
+	}
+
+	.nav__link {
+		color: var(--white);
+	}
+
+	.nav__link--button {
+		color: var(--very-dark-desaturated-blue);
+		background-color: var(--white);
+	}
+}
