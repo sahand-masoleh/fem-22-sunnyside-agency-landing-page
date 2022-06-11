@@ -16,26 +16,22 @@ function Footer() {
 				</a>
 			</div>
 			<div className="footer__social-container">
-				<img
-					src="./images/icon-facebook.svg"
-					alt="facebook icon"
-					className="footer__social"
-				/>
-				<img
-					src="./images/icon-instagram.svg"
-					alt="facebook icon"
-					className="footer__social"
-				/>
-				<img
-					src="./images/icon-twitter.svg"
-					alt="facebook icon"
-					className="footer__social"
-				/>
-				<img
-					src="./images/icon-pinterest.svg"
-					alt="facebook icon"
-					className="footer__social"
-				/>
+				<div
+					aria-label="facebook icon"
+					className="footer__social pointer"
+				></div>
+				<div
+					aria-label="facebook icon"
+					className="footer__social pointer"
+				></div>
+				<div
+					aria-label="facebook icon"
+					className="footer__social pointer"
+				></div>
+				<div
+					aria-label="facebook icon"
+					className="footer__social pointer"
+				></div>
 			</div>
 		</div>
 	);

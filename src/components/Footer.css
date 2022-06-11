@@ -27,8 +27,38 @@
 	color: var(--dark-moderate--cyan-footer);
 }
 
+.footer__link:hover {
+	color: var(--white);
+}
+
 .footer__social-container {
 	margin-top: auto;
 	display: flex;
 	gap: var(--gap-2);
+}
+
+.footer__social {
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: var(--dark-moderate--cyan-footer);
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: cover;
+}
+
+.footer__social:hover {
+	background-color: var(--white);
+}
+
+.footer__social:nth-of-type(1) {
+	mask-image: url("../../public/images/icon-facebook.svg");
+}
+.footer__social:nth-of-type(2) {
+	mask-image: url("../../public/images/icon-instagram.svg");
+}
+.footer__social:nth-of-type(3) {
+	mask-image: url("../../public/images/icon-twitter.svg");
+}
+.footer__social:nth-of-type(4) {
+	mask-image: url("../../public/images/icon-pinterest.svg");
 }

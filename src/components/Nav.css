@@ -88,4 +88,9 @@
 		color: var(--very-dark-desaturated-blue);
 		background-color: var(--white);
 	}
+
+	.nav__link--button:hover {
+		color: var(--white);
+		background-color: rgb(255, 255, 255, 0.2);
+	}
 }
