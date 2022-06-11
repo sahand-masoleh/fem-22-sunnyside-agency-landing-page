@@ -20,7 +20,7 @@ function Nav() {
 				<a href="#" className="nav__link">
 					Projects
 				</a>
-				<a href="#" className="nav__link nav__link--button font-secondary">
+				<a href="#" className="nav__link nav__link--button font-700">
 					CONTACT
 				</a>
 			</nav>

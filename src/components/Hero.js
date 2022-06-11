@@ -6,7 +6,7 @@ function Hero() {
 	return (
 		<header className="hero">
 			<div className="hero__overlay">
-				<h1 className="hero__title font-secondary">WE ARE CREATIVES</h1>
+				<h1 className="hero__title font-900">WE ARE CREATIVES</h1>
 				<img
 					src=".\images\icon-arrow-down.svg"
 					alt=""

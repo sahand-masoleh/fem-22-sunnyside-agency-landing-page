@@ -1,0 +1,71 @@
+.point-container {
+	display: flex;
+}
+.point-container--left {
+	flex-wrap: wrap;
+}
+.point-container--right {
+	flex-wrap: wrap-reverse;
+}
+
+.point {
+	background-color: var(--white);
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+
+.point__overlay {
+	padding: var(--gap-3) var(--gap-1);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-1);
+}
+
+.point__overlay--text-only {
+	color: var(--dark-grayish-blue);
+}
+
+.point__overlay--text-n-image {
+	color: var(--very-dark-desaturated-blue);
+	position: absolute;
+	bottom: 0;
+}
+
+.point__title {
+	font-size: 2rem;
+	padding: 0 var(--gap-1);
+}
+
+.point__text {
+	color: inherit;
+	line-height: 1.5rem;
+	margin: 0 auto;
+}
+
+.point__link {
+	text-decoration: none;
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.point__link::after {
+	content: "";
+	background-color: var(--accent);
+	width: 100%;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 1rem;
+	outline: 0.25rem solid var(--accent);
+	mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 640px) {
+	.point {
+		max-width: 50%;
+	}
+}

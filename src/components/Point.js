@@ -1,31 +1,35 @@
 import ResponsiveImage from "./ResponsiveImage";
 
+import "./Point.css";
+
 var points = [
 	[
 		{
 			title: "Transform your brand",
 			text: " We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
-			link: "Learn more",
+			link: "LEARN MORE",
 		},
 		{
 			image: "transform",
 			alt: "an egg",
+			accent: "yellow",
 		},
 	],
 	[
-		{
-			title: "Stand out to the right audience",
-			text: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. ",
-			link: "Learn more",
-		},
 		{
 			image: "stand-out",
 			alt: "a pint",
+			accent: "pink",
+		},
+		{
+			title: "Stand out to the right audience",
+			text: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. ",
+			link: "LEARN MORE",
 		},
 	],
 	[
 		{
-			title: "Graphic design",
+			title: "Graphic Design",
 			text: "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.",
 			image: "graphic-design",
 			alt: "cherries",
@@ -59,21 +63,34 @@ function PointContainer() {
 }
 
 function Point({ point }) {
-	const { image, alt, title, text, link } = point;
+	const { image, alt, accent, title, text, link } = point;
 	const modifier =
 		image && !title
-			? "point--image-only"
+			? "point__overlay--image-only"
 			: !image && text
-			? "point--text-only"
-			: "point--text-n-image";
+			? "point__overlay--text-only"
+			: "point__overlay--text-n-image";
 	return (
-		<section className={`point ${modifier}`}>
+		<section className="point">
 			{image && (
 				<ResponsiveImage className="point__image" fileName={image} alt={alt} />
 			)}
-			{title && <h2 className="point__title">{title}</h2>}
-			{text && <p>{text}</p>}
-			{link && <a href="#">{link}</a>}
+			{text && (
+				<div className={`point__overlay ${modifier}`}>
+					{title && <h2 className="point__title font-900">{title}</h2>}
+					{text && <p className="point__text">{text}</p>}
+					{link && (
+						// eslint-disable-next-line jsx-a11y/anchor-is-valid
+						<a
+							href="#"
+							className="point__link font-900"
+							// style={{ "--accent": "pink" }}
+						>
+							{link}
+						</a>
+					)}
+				</div>
+			)}
 		</section>
 	);
 }
