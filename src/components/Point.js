@@ -8,23 +8,23 @@ var points = [
 			title: "Transform your brand",
 			text: " We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
 			link: "LEARN MORE",
+			accent: "yellow",
 		},
 		{
 			image: "transform",
 			alt: "an egg",
-			accent: "yellow",
 		},
 	],
 	[
 		{
 			image: "stand-out",
 			alt: "a pint",
-			accent: "pink",
 		},
 		{
 			title: "Stand out to the right audience",
 			text: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. ",
 			link: "LEARN MORE",
+			accent: "pink",
 		},
 	],
 	[
@@ -84,7 +84,7 @@ function Point({ point }) {
 						<a
 							href="#"
 							className="point__link font-900"
-							// style={{ "--accent": "pink" }}
+							style={{ "--accent": accent }}
 						>
 							{link}
 						</a>

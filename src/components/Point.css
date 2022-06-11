@@ -51,6 +51,8 @@
 .point__link {
 	text-decoration: none;
 	position: relative;
+	width: max-content;
+	margin: 0 auto;
 }
 
 .point__link::after {
@@ -69,5 +71,7 @@
 @media screen and (min-width: 640px) {
 	.point {
 		flex-basis: 50%;
+		width: 100%;
+		flex-grow: 1;
 	}
 }
