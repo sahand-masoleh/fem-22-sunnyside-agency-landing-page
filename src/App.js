@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import PointContainer from "./components/Point";
 import TestimonialContainer from "./components/Testimonial";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -17,7 +18,7 @@ function App() {
 				<TestimonialContainer />
 				<Gallery />
 			</main>
-			<footer className="footer"></footer>
+			<Footer />
 		</>
 	);
 }
