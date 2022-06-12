@@ -27,11 +27,12 @@
 }
 
 @media screen and (min-width: 640px) {
-	.hero__title {
-		font-size: 3.5rem;
-	}
-
 	.hero__overlay {
 		gap: var(--gap-3);
+		justify-content: flex-start;
+	}
+	.hero__title {
+		margin-top: 15%;
+		font-size: 3.5rem;
 	}
 }
